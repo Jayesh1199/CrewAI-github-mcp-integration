@@ -1,0 +1,20 @@
+<form method="POST" action="{% url 'generate_documentation' %}">
+    {% csrf_token %}
+
+    <label for="repo_url">GitHub Repository URL:</label>
+
+    <input
+        type="url"
+        id="repo_url"
+        name="repo_url"
+        placeholder="https://github.com/jayesh1199/RAG-System"
+        value="{{ repo_url|default:'' }}"
+        required
+    >
+
+    <button type="submit">Generate Documentation</button>
+</form>
+
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
