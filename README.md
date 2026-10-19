@@ -162,9 +162,3 @@ The `generated_docs/` directory contains Markdown reports produced by the workfl
 - Django backend development
 - Environment variable management
 - Automated documentation generation
-
-## Project Background
-
-Built as part of the Educative learning project **"Build an Agentic Workflow with CrewAI and GitHub MCP Server Tools."**
-
-The project focuses on understanding how AI agents, orchestration frameworks, MCP tools, and backend applications work together to automate real-world software engineering workflows.
